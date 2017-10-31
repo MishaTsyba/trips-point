@@ -1,157 +1,13 @@
 .footer {
-    max-width: 100%;
-    background-color: $color_purple;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: $bgcolor_footer;
     &__content {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding-top: 8vh;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: flex-start;
-        position: relative;
-        @media (max-width: 992px) {
-            flex-wrap: wrap;
-        }
-    }
-    &__image {
-        position: absolute;
-        top: 50px;
-        @media (max-width: 992px) {
-            top: 25px;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 25px;
-        }
-    }
-    &__action {
-        width: 45%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        padding-right: 3%;
-        @media (max-width: 992px) {
-            width: 100%;
-            flex-flow: row nowrap;
-            padding-top: 80px;
-            padding-right: 0;
-        }
-        @media (max-width:576px) {
-            flex-flow: column wrap;
-            justify-content: space-around;
-            align-items: center;
-            padding-bottom: 30px;
-            text-align: center;
-        }
-    }
-    &__title {
-        font-family: $third_font;
-        font-size: 0.8em;
-        font-weight: 700;
-        color: $bgcolor;
-        text-transform: uppercase;
-        padding-bottom: 15px;
-        @media (max-width: 768px) {
-            //font-size: 0.7em;
-        }
-    }
-    &__header {
-        padding-left: 115px;
-        padding-bottom: 80px;
-        font-family: $secondary_font;
-        font-size: 1.2em;
-        font-weight: 700;
-        line-height: 2rem;
-        color: $bgcolor;
-        @media (max-width: 992px) {
-            padding-left: 0;
-            padding-bottom: 60px;
-            font-size: 1.1em;
-            line-height: 3rem;
-        }
-        @media (max-width:768px) {
-            font-size: 1em;
-            padding-right: 35px;
-        }
-        @media (max-width:576px) {
-            padding-right: 0;
-        }
-    }
-    &__header span {
-        font-size: 0.8em;
-        font-weight: 400;
-        @media (max-width: 768px) {
-            //font-size: 0.7em;
-        }
+        padding-top: 86px 50px 80px 50px;
     }
     &__c-menu {
-        //width: 67%;
-        display: flex;
-        flex-flow: row wrap;
-        @media (max-width: 992px) {
-            width: 100%;
-            justify-content: center;
-        }
-    }
-    &__subscribe {
-        padding-bottom: 80px;
-        @media (max-width: 992px) {
-            line-height: 3rem;
-            padding-bottom: 60px;
-        }
-        @media (max-width:768px) {
-            padding-right: 35px;
-        }
-        @media (max-width:576px) {
-            padding-right: 0;
-        }
-    }
-    &__form {
         display: flex;
         flex-flow: row nowrap;
-    }
-    &__input {
-        width: 85%;
-        padding-left: 15px;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 1px solid $bgcolor;
-        background-color: $color_purple;
-        font-family: $third_font;
-        font-size: 0.8em;
-        font-weight: 300;
-        line-height: 1.7;
-        color: $secondary_color;
-    }
-    &__input::-webkit-input-placeholder {
-        color: $secondary_color;
-        @media (max-width: 768px) {
-            font-size: 0;
-        }
-    }
-    &__submit {
-        width: 25px;
-        height: auto;
-        padding: 0;
-        border: none;
-        border-bottom: 1px solid $bgcolor;
-        background-image: url("../img/paper__plane__button.png");
-        background-repeat: no-repeat;
-        background-color: $color_purple;
-        cursor: pointer;
-    }
-    &__s-link {
-        display: inline-block;
-        margin-right: 15px;
-        text-decoration: none;
-        color: $secondary_color;
-    }
-    &__social {
-        @media (max-width: 992px) {
-            line-height: 3rem;
-        }
-        @media (max-width:576px) {
-            padding-bottom: 40px;
-        }
     }
 }
 
@@ -159,30 +15,26 @@
     &__item {
         //width: 25%;
         padding: 0 25px 35px 25px;
+        color: $color_black;
         li {
-            padding-left: 0;
-            
+            padding-left: 0;            
         }
-        @media (max-width:768px) {
+        /* @media (max-width:768px) {
             text-align: center;
-        }
-    }
-    &__link {
-        font-family: $third_font;
-        font-size: 0.8em;
-        font-weight: 300;
-        text-decoration: none;
-        color: $secondary_color;
+        } */
     }
     &__title {
-        font-family: $third_font;
-        font-size: 0.8em;
-        font-weight: 700;
-        color: $bgcolor;
-        text-transform: uppercase;
-        padding-bottom: 15px;
-        a {
-            color: $bgcolor;
+        font: {
+            family: $font_bold;
+            size: 0.938em;
         }
+        text-transform: uppercase;
+        padding-bottom: 25px;
+    }
+    &__link {
+        font: {
+            family: $font_reg;
+            size: 0.813em;
+        }        
     }
 }

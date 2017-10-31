@@ -2,22 +2,23 @@
 
 // Colors
 
-$bgcolor:                   #ffffff;
-$color_purple:              #9153cc;
+$bgcolor:       #ffffff;
+$color_purple:  #9153cc;
+$color_black:   #000000;
+$orange_color:  #d27a12;
+$grey__color:   #d4d4d4;
 
-$primary_color:             #000000;
-$secondary_color:           #ffffff;
-$grey__color:               #d4d4d4;
-
-$orange_color:              #d27a12;
+$bgcolor_footer: #f1f1f1;
+$bgcolor_bottom: #eaeaea;
 
 
 // Fonts
 
-$primary_font: 'Roboto', sans-serif;
-$secondary_font: 'Lato', sans-serif;
-$third_font: 'Open Sans', sans-serif;
-$logo_font: 'Roboto Condensed', sans-serif;
+$font_reg:            'GothamProRegular', sans-serif;
+$font_bold:           'GothamProBold', sans-serif;
+$font_italic:         'GothamProItalic', sans-serif;
+$font_bolditalic:     'GothamProBoldItalic', sans-serif;
+$font_black:          'GothamProBlack', sans-serif;
 
 $font-size-base: 10px;
 
