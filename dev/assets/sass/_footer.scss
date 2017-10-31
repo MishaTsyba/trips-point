@@ -3,7 +3,7 @@
     margin: 0 auto;
     background-color: $bgcolor_footer;
     &__content {
-        padding-top: 86px 50px 80px 50px;
+        padding: 86px 50px 80px 50px;
     }
     &__c-menu {
         display: flex;
@@ -15,9 +15,12 @@
     &__item {
         //width: 25%;
         padding: 0 25px 35px 25px;
-        color: $color_black;
+        
         li {
             padding-left: 0;            
+        }
+        a {
+            color: $color_black;
         }
         /* @media (max-width:768px) {
             text-align: center;
