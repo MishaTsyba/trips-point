@@ -9,6 +9,9 @@
     &__c-menu {
         display: flex;
         flex-flow: row nowrap;
+        @media (max-width:768px) {
+            flex-flow: row wrap;
+        }
     }
     &__bottom {
         display: flex;

@@ -1,0 +1,107 @@
+.news {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: $bgcolor_news;
+    &__header {
+        text-align: center;
+        h2 {
+            font: {
+                family: $font_bold;
+                size: 1.2em;
+            }
+            text-transform: uppercase;
+            line-height: 5rem;
+            color: $color_blue_heading;
+        }
+    }
+    &__content {
+        padding: 0 50px;
+        
+    }
+    &__kit {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    &__action {
+        text-align: center;
+        line-height: 7rem;
+    }
+    &__button {
+        border-radius: 3px;
+        background-color: #00bcd4;
+        width: 170px;
+        height: 40px;
+        a {
+            font: {
+                family: $font_bold;
+                size: 1.2em;
+            }
+            color: $color_white;
+        }
+    }
+}
+
+.trips__item {
+    position: relative;
+    margin: 0 25px;
+    &-img {
+        img {
+            max-width: 100%;
+        }
+    }
+    &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 17px 22px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        background-image: linear-gradient(0deg, #4c4b4b 0%, rgba(109, 109, 109, 0) 60%, rgba(131, 131, 131, 0) 100%);
+        &:hover {
+            justify-content: space-between;
+            background-color: rgba(109, 109, 109, 0.9);
+        }
+        &:hover .trips__item-description {
+            display: block;
+        }
+        &:hover .trips__item-action {
+            display: block;
+        }
+    }
+    &-title {
+        font: {
+            family: $font_bold;
+            size: 1.125em;
+        }
+        color: $color_white;
+        line-height: 1.275em;
+    }
+    &-description {
+        display: none;
+        transition: transform .3s;
+        font: {
+            family: $font_reg;
+            size: 0.75em;
+        }
+        color: $color_white;
+        line-height: 1.667em;
+    }
+    &-action {
+        display: none;
+        transition: transform .3s;
+        font: {
+            family: $font_reg;
+            size: 0.8em;
+        }
+        a {
+            color: $color_link_news;
+            &:after {
+                content: " >";
+            }
+        }
+    }
+}
