@@ -1,0 +1,215 @@
+.header {
+  background: $bgcolor;
+  margin-bottom: 0;
+  padding-bottom: 5rem;
+  &__additional{
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+  } 
+}
+.additional{
+  &__searchbutton{
+    border: none;
+    background: #fff;
+    padding-right: 1.5rem;
+  }
+  &__input{
+    width: 19rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid #000; 
+  }
+  &__lang{
+    text-transform: uppercase;
+    padding-left: 9rem;
+  }
+}
+.header__main{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  &__items{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  &__item{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  &__link:hover{
+    cursor: pointer;
+    color: $color_purple;
+  }
+}
+
+  
+.logo{
+  display: flex;
+  &__img{
+    padding-right: 2.5rem;
+  }
+  &__text{
+    padding-top: 3rem;
+    &__title{
+      font-size: 2.2rem;
+      display: block;
+    }
+    &__descr{
+      font-size: 1.1rem;
+    }
+  }
+}
+.header__buy{
+  display: flex;
+  align-items: center;
+  &--button{
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: $color_purple;
+    text-transform: uppercase;
+    background: #fff;
+    border: 2px solid $color_purple;
+    padding: 2rem 5rem;
+  }
+}
+.burger{
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: $color_purple;
+  cursor: pointer;
+  &__line{
+    position: absolute;
+    left: 10%;
+    height: 3px;
+    background:#fff;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    &--top{
+      top: 8px;
+      transition: 1s;
+    }
+    &--middle{
+      top: 18px;
+      transition: 1s;
+    }
+    &--bottom{
+      top: 28px;
+      transition: 1s;
+    }
+  }
+}
+.burger.active .burger__line--top{
+  top: 20px;
+  transform: rotate(45deg); 
+}
+.burger.active .burger__line--middle{
+  top: 15px;
+  opacity: 0;
+}
+.burger.active .burger__line--bottom{
+  top: 20px;
+  transform: rotate(-45deg); 
+}
+.nav__tickets{
+  display: none;
+}
+@media screen and (max-width:576px){
+  .logo__img{
+    padding-right: 0;
+  }
+}
+@media screen and (min-width:993px) and (max-width:1153px){
+  .nav__item{
+    font-size: 1.1rem;
+  }
+  .header__buy--button{
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 992px){
+  .nav__link:hover{
+    color: #000;
+  }
+  .additional{
+    display: none;
+  }
+  .container{
+    width:100%;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+    &__additional{
+      justify-content: center;
+      padding-top: 1rem;
+    }
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .nav__items{
+
+    flex-direction: column;
+  }
+  .nav__item{
+    width: 100%;
+
+  }
+  .header__buy{
+    display: none;
+  }
+  .menu{
+    top:100%;
+    width: 100%;
+    position: absolute;
+    left: -100rem;
+    transition: 1s;
+    background: $color_purple;
+    //height: 100vh;
+  }
+  .burger{
+    display: block;
+   margin-left: auto;
+   margin-top: 3rem;
+   z-index: 15;
+    
+  }
+  .nav li{
+    display: block;
+    background: $color_purple;
+    opacity: 1;
+    z-index: 4;
+    padding: 2rem;
+    text-align: center;
+
+  }
+  .menu.show{
+    top: 100%;
+    left: 0%;
+    transition: 1s;
+    width: 100%;
+    z-index: 0;
+   
+  }
+
+}
