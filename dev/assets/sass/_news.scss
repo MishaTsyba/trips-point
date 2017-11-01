@@ -44,8 +44,8 @@
 
 .trips__item {
     position: relative;
-    margin: 0 25px;
-    &-img {
+    margin: 15px;    
+    &-img {        
         img {
             max-width: 100%;
         }
@@ -60,6 +60,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
+        border-radius: 5px;
         background-image: linear-gradient(0deg, #4c4b4b 0%, rgba(109, 109, 109, 0) 60%, rgba(131, 131, 131, 0) 100%);
         &:hover {
             justify-content: space-between;
