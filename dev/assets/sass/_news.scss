@@ -15,8 +15,7 @@
         }
     }
     &__content {
-        padding: 0 50px;
-        
+        padding: 0 50px;        
     }
     &__kit {
         display: flex;
@@ -42,7 +41,7 @@
     }
 }
 
-.trips__item {
+.news__item {
     position: relative;
     margin: 15px;    
     &-img {        
@@ -66,10 +65,10 @@
             justify-content: space-between;
             background-color: rgba(109, 109, 109, 0.9);
         }
-        &:hover .trips__item-description {
+        &:hover .news__item-description {
             display: block;
         }
-        &:hover .trips__item-action {
+        &:hover .news__item-action {
             display: block;
         }
     }
@@ -93,7 +92,6 @@
     }
     &-action {
         display: none;
-        transition: transform .3s;
         font: {
             family: $font_reg;
             size: 0.8em;

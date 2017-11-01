@@ -1,0 +1,16 @@
+.map {
+    max-width: 1300px;
+    margin: 0 auto;
+    &__header {
+        text-align: center;
+        h2 {
+            font: {
+                family: $font_bold;
+                size: 1.2em;
+            }
+            text-transform: uppercase;
+            line-height: 5rem;
+            color: $color_blue_heading;
+        }
+    }
+}
